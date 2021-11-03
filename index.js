@@ -199,7 +199,7 @@ Use the filterByWord function below to do the following:
 function filterByWord(array, filteredWord){
   filteredFlavors = [];
   for (let i = 0; i <= array.length; i++) {
-    if (array.includes(filteredWord, i)) {
+    if (array[i].includes(filteredWord)) {
       filteredFlavors.push(array[i]);
     }
   }
