@@ -234,7 +234,7 @@ function getAverageWordLength(array){
   // split the string into a new array of items by using the space separator
   const wordArray = wordString.split(' ');
   // divide the total number of words by the total number of items in the original array
-  return wordArray.length / array.length;
+  return Math.round(wordArray.length / array.length);
 }
 
 getAverageWordLength(copiedFlavors);
@@ -244,13 +244,6 @@ getAverageWordLength(copiedFlavors);
 /* 💪💪💪💪💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪💪💪💪
 Baskin Robins now offers new flavors, seasonal flavors, and even regional flavors. Write a function that will randomly select a total of 31 flavors 
 from originalFlavors, currentFlavors, seasonalFlavors, and regionalFlavors and store it in an array called randomFlavors.
-
-Use the getRandomFlavors function and new arrays below to do the following:
-  1. Receive the four arrays with all the different flavors (originalFlavors is above, the others are below)
-  2. Randomly pick flavors from all four arrays
-  3. Return a new array called randomFlavors that has a lenght of 31
-
-  For example: getRandomFlavors(originalFlavors, newFlavors, seasonalFlavors, regionalFlavors) might return ["Strawberry Cheesecake", "Eggnog,"..."Chocolate"].
 */
 
 // NEW DATA ARRAYS FOR STRETCH 2 ⬇️
@@ -334,11 +327,34 @@ const regionalFlavors = [
   "Caramel 'n' Cookies"
 ]
 
-function getRandomFlavors(/*code here*/){
-  /*code here*/
+/* Use the getRandomFlavors function and new arrays below to do the following:
+  1. ✅ Receive the four arrays with all the different flavors (originalFlavors is above, the others are below)
+  2. Randomly pick flavors from all four arrays
+  3. Return a new array called randomFlavors that has a length of 31
+
+  For example: getRandomFlavors(originalFlavors, newFlavors, seasonalFlavors, regionalFlavors) might return ["Strawberry Cheesecake", "Eggnog,"..."Chocolate"].
+  */
+
+function getRandomFlavors(originalFlavors, newFlavors, seasonalFlavors, regionalFlavors){
+  // combine all four flavor collections into a single flavor collection
+  let allFlavors = [...originalFlavors, ...newFlavors, ...seasonalFlavors, ...regionalFlavors];
+  // declare a new array to hold the randomly selected flavors
+  let randomFlavors = [];
+  // create a loop that runs 31 times
+  for (let i = 0; i < 31; i++) {
+    // generate a random integer based on the total number of flavors
+    let randomIndex = Math.round(Math.floor(Math.random() * allFlavors.length));
+    // use that integer as an index to add a random flavor to the new flavor collection
+    randomFlavors.push(allFlavors[randomIndex]);
+  }
+  // return the new flavor collection
+  return randomFlavors;
 }
 
+getRandomFlavors(originalFlavors, newFlavors, seasonalFlavors, regionalFlavors);
 
+// TEST
+// console.log(getRandomFlavors(originalFlavors, newFlavors, seasonalFlavors, regionalFlavors));
 
 
 
