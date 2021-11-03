@@ -4,8 +4,8 @@
 
 ## Objectives
 
-- use arrays to store and access data
-- use array properties and array methods
+-   use arrays to store and access data
+-   use array properties and array methods
 
 ## Introduction
 
@@ -19,31 +19,29 @@ Your challenge today will be to work with their array of ice cream flavors to ac
 
 Using VSCode and Command Line:
 
-
-1. Fork the repo
-2. Go into canvas and connect your reop to codegrade
-3. Clone your forked version of the repo
-4. DO NOT CREATE A BRANCH. You will be pushing your changes to the main/master today
-5. cd into your repo
-6. open the terminal in your vs code and type `npm install`
-7. next type `npm run test` in your terminal
-8. Complete your work making regular commits to main/ master your codegrade score will update each time you make a push.
+1. ✅ Fork the repo
+2. ✅ Go into canvas and connect your reop to codegrade
+3. ✅ Clone your forked version of the repo
+4. ✅ DO NOT CREATE A BRANCH. You will be pushing your changes to the main/master today
+5. ✅ cd into your repo
+6. ✅ Open the terminal in your vs code and type `npm install`
+7. ✅ Next type `npm run test` in your terminal
+8. ✅ Complete your work making regular commits to main/ master your codegrade score will update each time you make a push.
 
 ### Task 2: MVP
 
-Find the file `index.js` and complete the tasks until your returns look like the expected returns. Do not use any of the forbidden methods! Forbidden methods are `.forEach()`, `.map()`, `.filter()` and `.reduce()`
+✅ Find the file `index.js` and complete the tasks until your returns look like the expected returns. Do not use any of the forbidden methods! Forbidden methods are `.forEach()`, `.map()`, `.filter()` and `.reduce()`
 
 ### Testing & Debugging
 
-Open a second terminal inside of your project by clicking on the split terminal icon
-![alt text](assets/split_terminal.png "Split Terminal")
+✅ Open a second terminal inside of your project by clicking on the split terminal icon
+![alt text](assets/split_terminal.png 'Split Terminal')
 
-Inside of your second terminal type `npm start` 
-![alt text](assets/npm_start.png "type npm start")
+✅ Inside of your second terminal type `npm start`
+![alt text](assets/npm_start.png 'type npm start')
 
-You will be running your tests in one terminal and debugging in the other. As you work on your code you should make use of `console.log` to check your progress and debug.
-![alt text](assets/tests_debug_terminal_final.png "your terminal should look like this")
-
+✅ You will be running your tests in one terminal and debugging in the other. As you work on your code you should make use of `console.log` to check your progress and debug.
+![alt text](assets/tests_debug_terminal_final.png 'your terminal should look like this')
 
 ### Task 3: Stretch
 
