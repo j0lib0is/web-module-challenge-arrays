@@ -176,7 +176,7 @@ removeFlavorByName(copiedFlavors, 'Rocky Road')
 
 
 
-/*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
+/*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 ✅ Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional materials highlighting all of their chocolate flavors. 
 Your task is to write a function that checks every item in the array for a string and returns a new array called filteredArray with only the values 
 that contain the received string. This would allow you to be able to filter for "Vanilla", "Sherbet", "Lemon" etc. when different holidays roll around 
@@ -185,9 +185,9 @@ by passing in those specific strings.
 Use the filterByWord function below to do the following:
   1. ✅ Receive an array
   2. ✅ Receive a string (example: "chocolate")
-  3. Check to see if any of the flavors in the array contain that string
-  4. If they do, add them to a new array
-  5. Return the new array that contains the filtered flavors
+  3. ✅ Check to see if any of the flavors in the array contain that string
+  4. ✅ If they do, add them to a new array
+  5. ✅ Return the new array that contains the filtered flavors
 
   For example: filterByWord(originalFlavors, "Chocolate") should return ["Chocolate", "Chocolate Almond", "Chocolate Chip", "Chocolate Fudge", "Chocolate Mint", "Chocolate Ribbon"]
 
@@ -197,8 +197,8 @@ Use the filterByWord function below to do the following:
 */
 
 function filterByWord(array, filteredWord){
-  filteredFlavors = [];
-  for (let i = 0; i <= array.length; i++) {
+  const filteredFlavors = [];
+  for (let i = 0; i < array.length; i++) {
     if (array[i].includes(filteredWord)) {
       filteredFlavors.push(array[i]);
     }
@@ -206,7 +206,11 @@ function filterByWord(array, filteredWord){
   return filteredFlavors;
 }
 
-console.log(filterByWord(copiedFlavors, 'Chocolate'));
+filterByWord(copiedFlavors, 'Chocolate')
+
+// TEST
+// console.log(filterByWord(copiedFlavors, 'Chocolate'));
+
 
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
